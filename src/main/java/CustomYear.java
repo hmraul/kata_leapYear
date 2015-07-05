@@ -7,6 +7,9 @@ public class CustomYear {
     }
 
     public boolean isLeapYear() {
+        if ((year % 100) == 0){
+            return false;
+        }
         return (year % 4) == 0;
     }
 }

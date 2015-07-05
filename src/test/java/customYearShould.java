@@ -20,4 +20,11 @@ public class customYearShould {
 
         assertThat(customYear.isLeapYear(), is(false));
     }
+
+    @Test
+    public void say_its_not_a_leapYear_when_is_divisible_by_100() {
+        customYear = new CustomYear(1900);
+
+        assertThat(customYear.isLeapYear(), is(false));
+    }
 }
